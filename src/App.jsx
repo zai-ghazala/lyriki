@@ -57,6 +57,7 @@ function App() {
     setEmojiKeywords([]);
     setEmojiIcons([]);
     setHaiku('');
+    setSpinner(false);
   };
   return (
     <>
