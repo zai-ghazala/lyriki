@@ -29,14 +29,6 @@ const handleSubmit = async (event) => {
   return (
     <main>
       <p className="instructions">Lyriki stitches together unlikely rhyming couplets from wikipedia articles and famous sonnets! <br/><br/>Made by <a href="https://www.zaiz.ai">Zai</a>
-        {spinner ? <div><br/><br/><div className="lds-spinner"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div></div> : couplet ?
-          <>
-            <br/><br/>
-            <span className="sources">Sources</span><br/>
-            <span className="title">{couplet.title}</span>
-            <span className="author">— {couplet.author}</span>
-            <br/>
-            <a href={`https://en.wikipedia.org/wiki/${keyword}`}>wikipedia article</a></> : null}
       </p><form onSubmit={handleSubmit}>
         <input
           type="text"
@@ -46,7 +38,10 @@ const handleSubmit = async (event) => {
 
         <button type="submit">search!</button>
       </form>
-    {couplet ? <><div className="couplet">{couplet.random}</div><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /></> : null}
+    {spinner ? <div className="lds-spinner"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div> : couplet ? <><div className="couplet">{couplet.message}
+
+    {!couplet.error ? 
+        <><br /><br /><span className="sources">Sources</span><br /><span className="title">{couplet.title}</span><span className="author">— {couplet.author}</span><br /><a href={`https://en.wikipedia.org/wiki/${keyword}`}>wikipedia article</a></> : null}</div><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /></> : null}
     </main>
   );
 }
