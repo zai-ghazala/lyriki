@@ -1,4 +1,5 @@
 
+import './normalize.css';
 import './App.scss';
 import { useState } from 'react';
 
@@ -33,13 +34,15 @@ const handleSubmit = async (event) => {
         <input 
         type="text" 
         name="keyword1" 
-        onChange={event => setKeyword1(event.target.value)}/>
+        onChange={event => setKeyword1(event.target.value)}
+        placeholder="keyword here"/>
         <input 
         type="text" 
         name="keyword2" 
-        onChange={event => setKeyword2(event.target.value)}/>
+        onChange={event => setKeyword2(event.target.value)}
+        placeholder="another keyword"/>
       
-        <button type="submit">generate!</button>
+        <button type="submit">search!</button>
     </form>
     {spinner ? <div className="lds-spinner"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div> : couplet ? <div className="couplet">{couplet}</div> : null}
     </main>

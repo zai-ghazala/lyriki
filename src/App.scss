@@ -1,21 +1,20 @@
 @font-face {
-  font-family: 'Larsseit';
-  src: url('/Larsseit.otf');
+  font-family: 'EB Garamond Italic';
+  src: url('/EBGaramond-Italic-VariableFont_wght.ttf');
 }
 @font-face {
-  font-family: 'Larsseit Bold';
-  src: url('/Larsseit-Bold.otf');
+  font-family: 'EB Garamond';
+  src: url('/EBGaramond-VariableFont_wght.ttf');
 }
 * {
   box-sizing: border-box;
 }
 body {
-  font-family: 'Larsseit';
+  font-family: 'EB Garamond';
   white-space: pre-wrap;
   background: turquoise url('/wikipedia.gif') no-repeat center;
   background-size: 100%;
-  --rgba: rgba(112, 122, 214, 0.8);
-  margin-bottom: 3rem
+  --rgba: rgba(112, 122, 214, 0.9);
 }
 main {
   margin: 0 auto;
@@ -25,10 +24,11 @@ input, button {
   display: block; 
   width: 90vw;
   padding: 1rem;
+  line-height: 1em;
   margin-bottom: 1vh;
   color: #fff;
-  font-family: 'Larsseit';
-  background: var(--rgba);
+  font-family: 'EB Garamond';
+  background: linear-gradient(rgba(112, 122, 214, 0.7), var(--rgba));
   backdrop-filter: blur( 4px );
   -webkit-backdrop-filter: blur( 4px );
   border-radius: 10px;
@@ -36,11 +36,23 @@ input, button {
   font-size: 1em;
   text-align: center
 }
+input::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+  font-family: 'EB Garamond Italic'
+}
+input {
+  font-family: 'EB Garamond'
+}
+button:first-letter {
+  font-size: 1.5em
+}
 button {
   margin: 0 auto;
   width: 100%;
   background: rgba(255, 255, 255, 0.8);
-  color: var(--rgba)
+  color: #111;
+  text-transform: uppercase;
+  border: 1px solid #111
 }
 form {
   margin-bottom: 12.5em;
@@ -48,7 +60,7 @@ form {
 div.couplet {
   color: #fff;
   margin: 0 auto;
-  font-family: 'Larsseit';
+  font-family: 'EB Garamond';
   position: absolute;
   padding: 1rem;
   width: 90vw;
@@ -66,7 +78,6 @@ div.couplet {
   }
   body {
     background-size: 50%;
-    margin-bottom: 0
   }
   div.couplet {
     font-size: 1.5em;
@@ -78,8 +89,6 @@ div.couplet {
   position: relative;
   width: 80px;
   height: 80px;
-  position: absolute;
-  bottom: 5rem;
   left: 50%;
   transform: translateX(-40px)
 }
@@ -96,7 +105,7 @@ div.couplet {
   width: 6px;
   height: 18px;
   border-radius: 20%;
-  background: var(--rgba);
+  background: #fff;
 }
 .lds-spinner div:nth-child(1) {
   transform: rotate(0deg);
