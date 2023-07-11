@@ -79,10 +79,10 @@ button {
   margin: 0 auto;
   background: linear-gradient(to bottom, #7f7f7f, #e0e0e0);
   color: black;
-  font-weight: 600;
+  font-weight: 500;
   width: 100%;
   text-transform: uppercase;
-  border: 5px solid black
+  border: 2px solid black
 }
 form {
   margin-bottom: 7em;
