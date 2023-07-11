@@ -6,11 +6,15 @@ function App() {
   const [keyword1, setKeyword1] = useState('')
   const [keyword2, setKeyword2] = useState('')
   const [couplet, setCouplet] = useState('')
+  const [spinner, setSpinner] = useState(false);  
 
   const generate = (keyword1, keyword2) => {
-    fetch(`${import.meta.env.VITE_SITE_URL}/api?keyword1=${keyword1}&keyword2=${keyword2}/`)
-    .then(response => response.text()  
+
+    setSpinner(true);
+    fetch(`${import.meta.env.VITE_SITE_URL}/api?keyword1=${keyword1}&keyword2=${keyword2}`)
+    .then(response => response.text() 
     .then(function (response) {
+      setSpinner(false);
       setCouplet(response)
     })
     .catch(function (error) {
@@ -24,7 +28,7 @@ const handleSubmit = async (event) => {
 }
 
   return (
-    <div>
+    <main>
     <form onSubmit={handleSubmit}>
         <input 
         type="text" 
@@ -35,11 +39,10 @@ const handleSubmit = async (event) => {
         name="keyword2" 
         onChange={event => setKeyword2(event.target.value)}/>
       
-        <input type="submit" />
+        <button type="submit">generate!</button>
     </form>
-
-    {couplet ? couplet : null}
-    </div>
+    {spinner ? <div className="lds-spinner"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div> : couplet ? <div className="couplet">{couplet}</div> : null}
+    </main>
   );
 }
 
