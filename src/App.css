@@ -22,7 +22,7 @@ html {
   background: turquoise url('/wikipedia.gif') no-repeat center fixed;
   background-size: contain;
   font-size: 1.2em;
-  height: calc(100vh + 200px);
+  height: calc(100vh + 100px);
 }
 a, a:visited {
   text-decoration: none;
