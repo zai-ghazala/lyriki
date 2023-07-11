@@ -32,6 +32,7 @@ const handleSubmit = async (event) => {
         {couplet ?
           <>
             <br/><br/>
+            <span className="sources">Sources</span><br/>
             <span className="title">{couplet.title}</span>
             <span className="author">— {couplet.author}</span>
             <br/>

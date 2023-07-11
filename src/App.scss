@@ -10,6 +10,10 @@
   font-family: 'Larsseit';
   src: url('/Larsseit.otf');
 }
+@font-face {
+  font-family: 'Larsseit Bold';
+  src: url('/Larsseit-Bold.otf');
+}
 * {
   box-sizing: border-box;
 }
@@ -30,6 +34,13 @@ main {
 }
 .title, .author {
   display: block
+}
+.sources {
+  display: block;
+  color: teal;
+  font-weight: 600;
+  font-size: 1.25em;
+  font-family: 'Larsseit Bold', Arial, Helvetica, sans-serif
 }
 .author {
   margin-left: 1em
