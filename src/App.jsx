@@ -75,7 +75,7 @@ function App() {
                 <span className='title'>{couplet.title}</span>
                 <span className='author'>— {couplet.author}</span>
                 <br />
-                <a href={`https://en.wikipedia.org/wiki/${keyword}`}>
+                <a href={`https://simple.wikipedia.org/wiki/${keyword}`}>
                   wikipedia article
                 </a>
               </>
