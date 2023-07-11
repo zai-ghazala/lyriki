@@ -6,19 +6,33 @@
   font-family: 'EB Garamond';
   src: url('/EBGaramond-VariableFont_wght.ttf');
 }
+@font-face {
+  font-family: 'Larsseit';
+  src: url('/Larsseit.otf');
+}
 * {
   box-sizing: border-box;
 }
 html {
-  font-family: 'EB Garamond';
+  font-family: 'EB Garamond', Georgia, 'Times New Roman', Times, serif;
   background: turquoise url('/wikipedia.gif') no-repeat center;
   background-size: contain;
   font-size: 1.2em;
   min-height: 100vh;
 }
+a, a:visited {
+  text-decoration: none;
+  color: blue
+}
 main {
   margin: 0 auto;
   width: 90vw;
+}
+.title, .author {
+  display: block
+}
+.author {
+  margin-left: 1em
 }
 input, button {
   display: block; 
@@ -27,7 +41,7 @@ input, button {
   width: 100%;
   margin: 1vh auto;
   color: #111;
-  font-family: 'EB Garamond';
+  font-family: 'EB Garamond', Georgia, 'Times New Roman', Times, serif;
   background: linear-gradient(rgba(255, 255, 255, 0.5), #fff);
   backdrop-filter: blur( 4px );
   -webkit-backdrop-filter: blur( 4px );
@@ -38,16 +52,17 @@ input, button {
 }
 input::placeholder {
   color: rgba(0,0, 0, 0.5);
-  font-family: 'EB Garamond Italic'
+  font-family: 'EB Garamond Italic',Georgia, 'Times New Roman', Times, serif
 }
 input {
-  font-family: 'EB Garamond'
+  font-family: 'EB Garamond', Georgia, 'Times New Roman', Times, serif
 }
 button:first-letter {
   font-size: 1.5em;
 }
 .instructions {
   display: block;
+  font-family: 'Larsseit', Arial, Helvetica, sans-serif
 }
 button {
   margin: 0 auto;
@@ -59,7 +74,7 @@ button {
   border: 1px solid #111
 }
 form {
-  margin-bottom: 10em;
+  margin-bottom: 7em;
 }
 div.couplet {
   color: #111;
