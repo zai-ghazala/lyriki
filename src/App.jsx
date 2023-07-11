@@ -31,7 +31,7 @@ const handleSubmit = async (event) => {
   return (
     <main>
 
-    <p className="instructions">Lyriki looks for rhymes collected from 2 wikipedia articles<br/><br/>Pressing search again with the same keywords will give you another random rhyme</p>
+    <p className="instructions">Lyriki looks for rhymes collected from 2 wikipedia articles</p>
     <form onSubmit={handleSubmit}>
         <input 
         type="text" 
