@@ -19,7 +19,7 @@
 }
 html {
   font-family: 'EB Garamond', Georgia, 'Times New Roman', Times, serif;
-  background: turquoise url('/wikipedia.gif') no-repeat center;
+  background: turquoise url('/wikipedia.gif') no-repeat center fixed;
   background-size: contain;
   font-size: 1.2em;
   min-height: 100vh;
