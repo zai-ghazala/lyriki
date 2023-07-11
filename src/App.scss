@@ -14,27 +14,30 @@ body {
   white-space: pre-wrap;
   background: turquoise url('/wikipedia.gif') no-repeat center;
   background-size: 100%;
-  --rgba: rgba(112, 122, 214, 0.9);
+  font-size: 1.2em;
+  --rgba: rgba(219, 34, 223, 0.9);
 }
 main {
   margin: 0 auto;
-  width: fit-content;
+  width: 90vw;
 }
 input, button {
   display: block; 
-  width: 90vw;
   padding: 1rem;
   line-height: 1em;
-  margin-bottom: 1vh;
+  width: 100%;
+  margin: 1vh auto;
   color: #fff;
   font-family: 'EB Garamond';
-  background: linear-gradient(rgba(112, 122, 214, 0.7), var(--rgba));
+  background: linear-gradient(rgba(219, 34, 223, 0.75), var(--rgba));
   backdrop-filter: blur( 4px );
   -webkit-backdrop-filter: blur( 4px );
   border-radius: 10px;
   border: none;
   font-size: 1em;
-  text-align: center
+  text-align: center;
+  mix-blend-mode: luminosity;
+  filter: brightness(150%)
 }
 input::placeholder {
   color: rgba(255, 255, 255, 0.5);
@@ -44,18 +47,21 @@ input {
   font-family: 'EB Garamond'
 }
 button:first-letter {
-  font-size: 1.5em
+  font-size: 1.5em;
+}
+.instructions {
+  display: block;
 }
 button {
   margin: 0 auto;
-  width: 100%;
-  background: rgba(255, 255, 255, 0.8);
+  background: #fff;
   color: #111;
+  width: 100%;
   text-transform: uppercase;
   border: 1px solid #111
 }
 form {
-  margin-bottom: 12.5em;
+  margin-bottom: 10em;
 }
 div.couplet {
   color: #fff;
@@ -64,23 +70,32 @@ div.couplet {
   position: absolute;
   padding: 1rem;
   width: 90vw;
-  background: var(--rgba);
+  background-color: var(--rgba);
   backdrop-filter: blur( 4px );
   -webkit-backdrop-filter: blur( 4px );
   border-radius: 10px;
-  transition: background 0.3s;
   font-size: 1em;
 }
 @media screen and (min-width: 768px) {
-  input, button, div.couplet {
+  input, button {
+    font-size: 1.65em;
+    width: 75vw
+  }
+  div.couplet {
+    font-size: 1.2em;
+    width: 75vw
+  }
+  input, button {
+    padding: 1em
+  }
+  main {
     width: 75vw;
-    font-size: 3em
   }
   body {
     background-size: 50%;
   }
-  div.couplet {
-    font-size: 1.5em;
+  p.instructions {
+    font-size: 1.25em;
   }
 }
 .lds-spinner {

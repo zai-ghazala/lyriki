@@ -30,6 +30,8 @@ const handleSubmit = async (event) => {
 
   return (
     <main>
+
+    <p className="instructions">Lyriki looks for rhyming couplets collected from 2 Wikipedia articles</p>
     <form onSubmit={handleSubmit}>
         <input 
         type="text" 
@@ -40,11 +42,11 @@ const handleSubmit = async (event) => {
         type="text" 
         name="keyword2" 
         onChange={event => setKeyword2(event.target.value)}
-        placeholder="another keyword"/>
+        placeholder="another keyword here"/>
       
         <button type="submit">search!</button>
     </form>
-    {spinner ? <div className="lds-spinner"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div> : couplet ? <div className="couplet">{couplet}</div> : null}
+    {spinner ? <div className="lds-spinner"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div> : couplet ? <><div className="couplet">{couplet}</div><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /></> : null}
     </main>
   );
 }
