@@ -29,7 +29,7 @@ const handleSubmit = async (event) => {
   return (
     <main>
 
-    <p className="instructions">Lyriki creates rhyming couplets from wikipedia articles and famous sonnets!</p>
+    <p className="instructions">Lyriki stitches together unlikely rhyming couplets from wikipedia articles and famous sonnets!</p>
     <form onSubmit={handleSubmit}>
         <input 
         type="text" 
