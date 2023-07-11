@@ -44,7 +44,7 @@ function App() {
           placeholder='wiki article here'
         />
 
-        <button type='submit'>search!</button>
+        <button type='submit'>search</button>
       </form>
       {spinner ? (
         <div className='lds-spinner'>
