@@ -95,6 +95,11 @@ div.couplet {
   }
   p.instructions {
     font-size: 1.25em;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 25%;
+    padding: 1rem;
   }
 }
 .lds-spinner {
