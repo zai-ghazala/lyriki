@@ -24,6 +24,9 @@ html {
   font-size: 1.2em;
   min-height: 100vh;
 }
+body {
+  padding-bottom: 400px
+}
 a, a:visited {
   text-decoration: none;
   color: blue
@@ -58,7 +61,7 @@ input, button {
   -webkit-backdrop-filter: blur( 4px );
   border-radius: 10px;
   border: none;
-  font-size: 1em;
+  font-size: 1.5em;
   text-align: center;
 }
 input::placeholder {
@@ -118,6 +121,7 @@ div.couplet {
   }
   body {
     background-size: 50%;
+    padding-bottom: 0
   }
   p.instructions {
     font-size: 1.25em;

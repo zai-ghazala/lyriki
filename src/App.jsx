@@ -81,16 +81,6 @@ function App() {
               </>
             ) : null}
           </div>
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
         </>
       ) : null}
     </main>
