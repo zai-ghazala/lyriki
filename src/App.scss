@@ -95,7 +95,7 @@ div.couplet {
   position: absolute;
   padding: 1rem;
   width: 90vw;
-  background-color: rgba(255,255,255,0.9);
+  background: linear-gradient(rgba(255, 255, 255, 0.5), #fff);
   backdrop-filter: blur( 4px );
   -webkit-backdrop-filter: blur( 4px );
   border-radius: 10px;
