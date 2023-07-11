@@ -31,8 +31,8 @@ function App() {
   return (
     <main>
       <p className='instructions'>
-        Lyriki stitches together unlikely rhyming couplets from wikipedia
-        articles and famous sonnets! <br />
+        Lyriki unearths unlikely rhyming couplets from wikipedia
+        articles and famous sonnets.<br />
         <br />
         Made by <a href='https://www.zaiz.ai'>Zai</a>
       </p>
