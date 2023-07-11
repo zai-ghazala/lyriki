@@ -1,5 +1,5 @@
 import './normalize.css';
-import './App.scss';
+import './App.css';
 import { useState } from 'react';
 
 function App() {
