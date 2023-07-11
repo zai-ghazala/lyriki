@@ -31,7 +31,7 @@ const handleSubmit = async (event) => {
   return (
     <main>
 
-    <p className="instructions">Lyriki looks for rhyming couplets collected from 2 Wikipedia articles</p>
+    <p className="instructions">Lyriki looks for rhyming couplets collected from 2 wikipedia articles</p>
     <form onSubmit={handleSubmit}>
         <input 
         type="text" 
