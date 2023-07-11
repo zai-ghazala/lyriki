@@ -22,10 +22,6 @@ html {
   background: turquoise url('/wikipedia.gif') no-repeat center fixed;
   background-size: contain;
   font-size: 1.2em;
-  max-height: 100vh;
-}
-body {
-  padding-bottom: 400px
 }
 a, a:visited {
   text-decoration: none;
@@ -33,6 +29,7 @@ a, a:visited {
 }
 main {
   margin: 0 auto;
+  padding-bottom: 400px;
   width: 90vw;
 }
 .title, .author {
@@ -118,10 +115,10 @@ div.couplet {
   }
   main {
     width: 50vw;
+    padding-bottom: 0
   }
   body {
     background-size: 50%;
-    padding-bottom: 0
   }
   p.instructions {
     font-size: 1.25em;
