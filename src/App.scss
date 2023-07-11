@@ -77,12 +77,12 @@ button:first-letter {
 }
 button {
   margin: 0 auto;
-  background: #fff;
-  color: #111;
+  background: linear-gradient(to bottom, #7f7f7f, #e0e0e0);
+  color: black;
   font-weight: 600;
   width: 100%;
   text-transform: uppercase;
-  border: 1px solid #111
+  border: 5px solid black
 }
 form {
   margin-bottom: 7em;
@@ -91,7 +91,7 @@ div.couplet {
   color: #111;
   white-space: pre-wrap;
   margin: 0 auto;
-  font-family: 'EB Garamond';
+  font-family: 'Larsseit';
   position: absolute;
   padding: 1rem;
   width: 90vw;
