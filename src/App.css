@@ -22,6 +22,7 @@ html {
   background: turquoise url('/wikipedia.gif') no-repeat center fixed;
   background-size: contain;
   font-size: 1.2em;
+  height: calc(100vh + 200px);
 }
 a, a:visited {
   text-decoration: none;
@@ -29,7 +30,6 @@ a, a:visited {
 }
 main {
   margin: 0 auto;
-  padding-bottom: 400px;
   width: 90vw;
 }
 .title, .author {
@@ -105,6 +105,9 @@ div.couplet {
   input, button {
     font-size: 1.65em;
     width: 50vw
+  }
+  html {
+    height: 100vh
   }
   div.couplet {
     font-size: 1.2em;
