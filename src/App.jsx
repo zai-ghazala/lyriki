@@ -29,7 +29,7 @@ const handleSubmit = async (event) => {
   return (
     <main>
       <p className="instructions">Lyriki stitches together unlikely rhyming couplets from wikipedia articles and famous sonnets! <br/><br/>Made by <a href="https://www.zaiz.ai">Zai</a>
-        {couplet ?
+        {spinner ? <div><br/><br/><div className="lds-spinner"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div></div> : couplet ?
           <>
             <br/><br/>
             <span className="sources">Sources</span><br/>
@@ -46,7 +46,7 @@ const handleSubmit = async (event) => {
 
         <button type="submit">search!</button>
       </form>
-    {spinner ? <div className="lds-spinner"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div> : couplet ? <><div className="couplet">{couplet.random}</div><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /></> : null}
+    {couplet ? <><div className="couplet">{couplet.random}</div><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /></> : null}
     </main>
   );
 }
