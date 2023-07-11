@@ -40,9 +40,9 @@ const handleSubmit = async (event) => {
       </p><form onSubmit={handleSubmit}>
         <input
           type="text"
-          name="keyword1"
+          name="keyword"
           onChange={event => setKeyword(event.target.value)}
-          placeholder="keyword here" />
+          placeholder="wiki article here" />
 
         <button type="submit">search!</button>
       </form>
