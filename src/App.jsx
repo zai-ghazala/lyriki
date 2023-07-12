@@ -9,12 +9,14 @@ function App() {
 
   const search = (keyword) => {
     setSpinner(true);
+    document.body.classList.add('spinner')
     fetch(`${import.meta.env.VITE_SITE_URL}/api?keyword=${keyword}`).then(
       (response) =>
         response
           .json()
           .then(function (response) {
             setSpinner(false);
+            document.body.classList.remove('spinner')
             setCouplet(response);
           })
           .catch(function (error) {
@@ -31,7 +33,7 @@ function App() {
   return (
     <main>
       <p className='instructions'>
-        Lyriki unearths unlikely rhyming couplets from wikipedia
+        Lyriki finds unlikely rhyming couplets from wikipedia
         articles and famous sonnets.<br />
         <br />
         Made by <a href='https://www.zaiz.ai'>Zai</a>
@@ -41,26 +43,13 @@ function App() {
           type='text'
           name='keyword'
           onChange={(event) => setKeyword(event.target.value)}
-          placeholder='wiki article here'
+          placeholder='type wiki article name here'
         />
 
         <button type='submit'>search</button>
       </form>
       {spinner ? (
-        <div className='lds-spinner'>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-        </div>
+        null
       ) : couplet ? (
         <>
           <div className='couplet'>
