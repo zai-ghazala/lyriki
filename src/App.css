@@ -13,11 +13,6 @@
   src: url('/SourceSans3-VariableFont_wght.ttf');
 }
 
-@font-face {
-  font-family: 'Larsseit Bold';
-  src: url('/Larsseit-Bold.otf');
-}
-
 * {
   box-sizing: border-box;
 }
