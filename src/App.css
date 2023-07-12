@@ -60,7 +60,7 @@ input, button {
   margin: 1vh auto;
   color: #111;
   font-family: 'EB Garamond', Georgia, 'Times New Roman', Times, serif;
-  background: linear-gradient(rgba(255, 255, 255, 0.8), #fff);
+  background: linear-gradient(rgba(255, 255, 255, 0.5), #fff);
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
   border-radius: 10px;
@@ -115,7 +115,7 @@ div.couplet {
   position: absolute;
   padding: 1rem;
   width: 90vw;
-  background: linear-gradient(rgba(255, 255, 255, 0.5), #fff);
+  background: linear-gradient(rgba(255, 255, 255, 0.8), #fff);
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
   border-radius: 10px;
