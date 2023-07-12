@@ -124,9 +124,7 @@ div.couplet {
   position: absolute;
   padding: 1rem;
   width: 90vw;
-  background: linear-gradient(rgba(255, 255, 255, 0.8), #fff);
-  backdrop-filter: blur(4px);
-  -webkit-backdrop-filter: blur(4px);
+  background: #fff;
   border-radius: 10px;
   font-size: 1em;
 }
