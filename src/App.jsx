@@ -33,7 +33,7 @@ function App() {
   return (
     <main>
       <p className='instructions'>
-        Lyriki finds unlikely rhyming couplets made from wikipedia
+        Lyriki finds serendipitous rhyming couplets made from wikipedia
         articles and famous sonnets.<br />
         <br />
         Made by <a href='https://www.zaiz.ai'>Zai</a>
