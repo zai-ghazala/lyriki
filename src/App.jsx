@@ -2,7 +2,7 @@ import './normalize.css';
 import './App.css';
 import { useState } from 'react';
 
-function App() {
+function App({content}) {
   const [keyword, setKeyword] = useState('');
   const [couplet, setCouplet] = useState();
   const [spinner, setSpinner] = useState(false);
@@ -52,7 +52,7 @@ function App() {
         null
       ) : couplet ? (
         <>
-          <div className='couplet'>
+          <div className='couplet transition' key={content}>
             {couplet.message}
 
             {!couplet.error ? (

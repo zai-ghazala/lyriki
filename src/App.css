@@ -165,3 +165,11 @@ div.couplet {
     padding: 1rem;
   }
 }
+@keyframes transition {
+  0% { opacity: 0 }
+  100% { opacity: 1}
+}
+
+.transition {
+  animation: transition 0.3s;
+}
