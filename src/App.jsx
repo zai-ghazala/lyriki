@@ -33,7 +33,7 @@ function App({content}) {
   return (
     <main>
       <p className='instructions'>
-        Lyriki finds serendipitous rhyming couplets made from wikipedia
+        Lyriki hopes to find serendipitous rhyming couplets made from wikipedia
         articles and famous sonnets.<br />
         <br />
         Made by <a href='https://www.zaiz.ai'>Zai</a>
@@ -64,7 +64,7 @@ function App({content}) {
                 <span className='title'>{couplet.title}</span>
                 <span className='author'>— {couplet.author}</span>
                 <br />
-                <a href={`https://en.wikipedia.org/wiki/${keyword}`}>
+                <a href={`https://simple.wikipedia.org/wiki/${keyword}`}>
                   wikipedia article
                 </a>
               </>
