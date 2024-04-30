@@ -36,7 +36,7 @@ function App({content}) {
         Lyriki hopes to find serendipitous rhyming couplets made from wikipedia
         articles and famous sonnets.<br />
         <br />
-        Made by <a href='https://www.zaiz.ai'>Zai</a>
+        Made by <a href='https://www.ghazala.cc'>Zai</a>
       </p>
       <form onSubmit={handleSubmit}>
         <input
